@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Testing</title>
+</head>
+<body class="mx-auto max-w-[800px] relative bg-white md:w-[80%] lg:md-[70%] min-w-[400px]">
+  
+  <!-- Navbar -->
+  <nav id="nav-header" class="mt-10 w-[90%] mx-auto relative">
+
+    <!-- Navbar Toggler -->
+    <div class="fixed top-0 right-0 z-50 w-full h-[160px] bg-gradient-to-b from-white to-transparent lg:hidden">
+      <div class="flex justify-end items-center w-[90%] min-w-[375px] max-w-[800px] mx-auto">
+        <button id="nav-toggler" class="cursor-pointer">
+          <img src="./assets/svg/menu.svg" height="32" width="32" class="mx-auto my-2" alt="Menu toggler">
+        </button>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <ul id="nav-menu" class="fixed w-full mx-auto top-0 left-0 right-0 bg-black px-5 py-10 flex flex-col justify-center items-center z-50 rounded-b-[30px] lg:w-[750px] lg:flex-row lg:justify-between lg:bg-transparent lg:h-[120px] lg:bg-gradient-to-b lg:from-white lg:to-transparent lg:px-5 lg:-top-5">
+      <li class="text-base font-primary text-white py-3"><a class="navigate-link cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="#about-me">About Me</a></li>
+      <li class="text-base font-primary text-white py-3"><a class="navigate-link cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="#education">Education</a></li>
+      <li class="text-base font-primary text-white py-3"><a class="navigate-link cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="#work-experience">Work Experience</a></li>
+      <li class="text-base font-primary text-white py-3"><a class="navigate-link cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="#skills">Skills</a></li>
+      <li class="text-base font-primary text-white py-3"><a class="navigate-link cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="#showcases">Showcases</a></li>
+      <li class="text-base font-primary text-white py-3"><a class="cursor-pointer hover:text-primary hover:underline hover:font-bold lg:text-black lg:hover:text-black" href="/blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="w-[95%] mx-auto main-container relative min-h-[800px] min-w-[375px] ">
+    <!-- Background Container -->
+    <div id="bg-container" class="absolute top-0 left-0 right-0 -z-50"></div>
+
+    <!-- Content -->
+    <div class="pt-20">
+
+      <!-- About Me -->
+      <section id="about-me" class="my-10 lg:max-w-[70%]">
+        <!-- About Me Title -->
+        <div class="relative">
+          <img class="absolute -top-3 -left-5 h-[120px] w-[160px] lg:-top-5 lg:-left-8 lg:h-[140px] lg:w-[180px]" src="./assets/components/dialogue-box.png" alt="Dialogue Box">
+          <h1 class="text-2xl font-bold font-primary text-black translate-x-[10px] underline transform -rotate-3 md:text-3xl lg:text-4xl">About Me</h1>
+        </div>
+
+        <!-- About Me Content -->
+        <p class="p-4 font-primary text-black text-sm/6 transform -rotate-3 w-[95%] mx-auto mt-12 lg:mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis reprehenderit eaque iste architecto, dolore quos beatae provident maiores vero quidem dignissimos ullam sed iusto nesciunt natus, animi aut eveniet eum repellendus a molestiae! Sint facilis eaque, iusto explicabo nostrum fugiat corporis maxime tempora hic vitae voluptatem consequatur accusamus qui reprehenderit impedit ut voluptatum quam deserunt sequi doloribus? Mollitia accusamus magnam, dolorem id dolore laudantium dolorum vel voluptatum soluta optio eos alias cum ipsa explicabo illo impedit deserunt itaque quia minima quis laboriosam. Recusandae sunt molestias voluptatum maxime odit, adipisci suscipit rem voluptates, praesentium nesciunt dolore temporibus ex, tempore ea!</p>
+        
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="my-10 text-end">
+        <!-- Education Title -->
+        <div class="relative">
+          <img class="absolute -top-13 -right-2 h-[120px] w-[160px] lg:-top-12 lg:-right-8 lg:h-[140px] lg:w-[240px]" src="./assets/components/dialogue-box-fliped.png" alt="">
+          <h1 class="text-2xl font-bold font-primary text-black -translate-x-[10px] -translate-y-[10px] underline transform -rotate-3 md:text-3xl lg:text-4xl lg:-translate-y-[-20]">Education</h1>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="education-card mt-2">
+          
+          <div class="w-[360px] pr-8 pt-8 ml-auto relative">
+            <div class="sm:h-[160px] flex flex-col justify-center">
+              <!-- Qualification -->
+              <h3 class="font-primary font-semibold text-base transform -rotate-2 lg:text-lg">Advance Diploma in Computer and Information Security</h3>
+              
+              <div>
+                <!-- Institution -->
+                <p class="transform -rotate-2 font-primary text-black text-sm mt-2 lg:text-base">HKU Space</p>
+    
+                <!-- Period -->
+                <p class="transform -rotate-2 font-primary text-gray-500 text-sm">2023 - 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Item 2 -->
+        <div class="education-card mt-2">
+          
+          <div class="w-[360px] pr-8 pt-8 ml-auto relative">
+            <div class="sm:h-[160px] flex flex-col justify-center">
+              <!-- Qualification -->
+              <h3 class="font-primary font-semibold text-base transform -rotate-2 lg:text-lg">Minor in Teaching Chinese as a Secondary Language</h3>
+              
+              <div>
+                <!-- Institution -->
+                <p class="transform -rotate-2 font-primary text-black text-sm mt-2 lg:text-base">Chung Yuan Christian University</p>
+    
+                <!-- Period -->
+                <p class="transform -rotate-2 font-primary text-gray-500 text-sm">2015 - 2020</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Work Experience -->
+      <section id="work-experience" class="my-10 lg:max-w-70%">
+        <!-- Work Experience Title -->
+        <div class="relative">
+          <img class="absolute -top-3 -left-5 h-[150px] w-[250px] lg:-top-5 lg:-left-8 lg:h-[180px] lg:w-[380px]" src="./assets/components/dialogue-box.png" alt="Dialogue Box">
+          <h1 class="text-2xl font-bold font-primary text-black translate-x-[10px] translate-y-[23px] underline transform -rotate-3 md:text-3xl lg:text-4xl">Work Experience</h1>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="relative border-l-5 border-black pl-6 py-4 mb-10 mt-30 w-[80%] mx-auto lg:mt-30 lg:mb-10">
+
+          <!-- Item 1 -->
+          <div class="relative my-8 w-[95%]">
+            <!-- Circle Indicator -->
+            <div class="circle-indicator absolute -left-[38px] top-2 w-6 h-6 bg-white border-4 border-black rounded-full"></div>
+
+            <div class="speech-bubble relative bg-white p-4 rounded-lg ml-5 border-4 border-black">
+              <h3 class="text-2xl font-bold text-heading font-primary">Web Developer</h3>
+              
+              <div class="px-2">
+                <p class="text-gray-700 font-primary text-lg">Tech Innovations Inc</p>
+                <p class="text-gray-400 text-sm font-primary">01/2020 - 02/2020</p>
+
+                <p class="text-black mt-2 text-sm font-primary my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+              </div>
+
+              <!-- Speech Bubble Tail -->
+              <div class="absolute -left-[32px] top-[20px] -translate-y-1/2 border-[16px] border-transparent border-r-black"></div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative my-8 w-[95%]">
+            <!-- Circle Indicator -->
+            <div class="circle-indicator absolute -left-[38px] top-2 w-6 h-6 bg-white border-4 border-black rounded-full"></div>
+
+            <div class="speech-bubble relative bg-white p-4 rounded-lg ml-5 border-4 border-black">
+              <h3 class="text-2xl font-bold text-heading font-primary">Web Developer</h3>
+              
+              <div class="px-2">
+                <p class="text-gray-700 font-primary text-lg">Tech Innovations Inc</p>
+                <p class="text-gray-400 text-sm font-primary">01/2020 - 02/2020</p>
+
+                <p class="text-black mt-2 text-sm font-primary my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+              </div>
+
+              <!-- Speech Bubble Tail -->
+              <div class="absolute -left-[32px] top-[20px] -translate-y-1/2 border-[16px] border-transparent border-r-black"></div>
+            </div>
+          </div>
+
+          
+        </div>    
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="my-10 text-end">
+        <!-- Skills Title -->
+        <div class="relative">
+          <img class="absolute -top-16 -right-2 h-[120px] w-[160px] lg:-top-5 lg:-right-8 lg:h-[140px] lg:w-[180px]" src="./assets/components/dialogue-box-fliped.png" alt="">
+          <h1 class="text-2xl font-bold font-primary text-black -translate-x-[50px] -translate-y-[20px] underline transform -rotate-3 md:text-3xl lg:text-4xl  lg:-translate-x-[15px] lg:translate-y-[30px]">Skills</h1>
+        </div>
+
+        <div class="mt-5 mb-10 grid grid-cols-3 md:grid-cols-5 gap-4 w-full lg:mt-15 lg:mb-20">
+          
+          <div class="flex flex-col items-center h-[100px] justify-between gap-3 py-4">
+            <img class="mx-auto" src="assets/images/html_5.png" height="45" width="45" alt="HTML">
+            <p class="font-primary font-semibold text-heading text-sm">HTML5</p>
+          </div>
+
+
+          <div class="flex flex-col items-center h-[100px] justify-between gap-3 py-4">
+            <img class="mx-auto" src="assets/images/css_3.png" height="45" width="45" alt="CSS">
+            <p class="font-primary font-semibold text-heading text-sm">CSS3</p>
+          </div>
+
+          <div class="flex flex-col items-center h-[100px] justify-between gap-3 py-4">
+            <img class="mx-auto" src="assets/images/javascript.png" height="45" width="45" alt="CSS">
+            <p class="font-primary font-semibold text-heading text-sm">JavaScript</p>
+          </div>
+
+          <div class="flex flex-col items-center h-[100px] justify-between gap-3 py-4">
+            <img class="mx-auto" src="assets/images/bootstrap.png" height="45" width="45" alt="CSS">
+            <p class="font-primary font-semibold text-heading text-sm">Bootstrap</p>
+          </div>
+
+          <div class="flex flex-col items-center h-[100px] justify-between gap-3 py-4">
+            <img class="mx-auto" src="assets/images/react.png" height="45" width="45" alt="CSS">
+            <p class="font-primary font-semibold text-heading text-sm">React</p>
+          </div>
+
+         </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="h-[100px] mt-60 w-[90%] mx-auto text-center">
+    <!-- Copyright Reserved -->
+    <p class="font-secondary text-heading text-1xs">&copy; 2025 Stanford Tse. All Rights Reserved.</p>
+
+    <!-- Policy & Term -->
+    <a href="#" class="font-primary text-sm hover:underline">Policy & Terms</a>
+  </footer>
+  
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

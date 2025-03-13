@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Blog</title>
+</head>
+<body class="mx-auto max-w-[800px] relative bg-white md:w-[80%] lg:md-[70%] min-w-[400px]">
+
+  <!-- Navbar -->
+  <nav class="mt-10 w-[90%] mx-auto flex justify-start items-center relative top-[30px]">
+    <a href="/" class="font-primary flex justiy-between items-center z-50 text-lg">
+      <img src="./assets/svg/caret-outline.svg" height="35" width="35" alt="Back Button">
+      Back
+    </a>
+  </nav>
+
+    <!-- Main Container -->
+  <main class="w-[95%] mx-auto main-container relative min-h-[800px] min-w-[375px] ">
+
+    <!-- Background Container -->
+    <div id="bg-container" class="absolute top-0 left-0 right-0 -z-50"></div>
+    
+    <!-- Content -->
+    <div class="pt-20">
+      
+      <!-- Blog -->
+      <section class="my-10">
+        
+        <ul>
+
+          <!-- Blog 1 -->
+          <li class="flex flex-col items-start w-full my-8 sm:flex-row sm:justify-center sm:gap-2 sm:my-15 lg:gap-5">
+            <!-- Thumbnail -->
+            <div class="thumbnail-image relative">
+              <img class="absolute top-6 left-5 transform -rotate-4 h-[155px] w-[280px] object-cover lg:h-[190px] lg:w-[340px]  " src="./assets/images/dummy-showcase.webp" alt="Dummy Image">
+            </div>
+
+            <!-- Title -->
+            <div>
+              <div class="blog-card-title-container relative transform -rotate-6 h-[20px]">
+                <h3 class="blog-card-title font-primary text-xl p-2 pl-5 text-white font-bold ml-4 mb-3 transform rotate-2 absolute sm:transform sm:translate-y-3 lg:translate-x-4 lg:translate-y-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur qui necessitatibus facere sit nesciunt natus vitae ab sequi eum facilis.</h3>
+              </div>
+              
+              <!-- Navigate to read -->
+              <a href="#" class="transfrom translate-x-5 w-fit h-fit overflow-hidden bg-black rounded-full p-[5px] flex justify-center items-center mt-2">
+                <img src="./assets/svg/arrow.svg" alt="Read More" class="h-[30px] w-[30px]">
+                <span class="text-white text-base pr-2 font-primary">Read More</span>
+              </a>
+            </div>
+
+          </li>
+
+          <!-- Blog 2 -->
+          <li class="flex flex-col items-end my-8 sm:flex-row-reverse sm:justify-center sm:items-center sm:gap-2 sm:my-15 lg:gap-5">
+            <!-- Thumbnail -->
+            <div class="thumbnail-image fliped relative">
+              <img class="absolute top-6 left-5 transform -rotate-4 h-[155px] w-[280px] object-cover lg:h-[190px] lg:w-[340px]" src="./assets/images/dummy-showcase.webp" alt="Dummy Image">
+            </div>  
+
+            <div class="flex flex-col items-end">
+              <!-- Title -->
+              <div class="blog-card-title-container fliped relative transform -rotate-6 h-[20px]">
+                <h3 class="blog-card-title font-primary text-xl p-2 pl-5 text-white font-bold ml-4 mb-3 transform -rotate-2 absolute sm:transform sm:-translate-x-4 sm:translate-y-2 lg:-translate-x-2 lg:translate-y-4">ufwefo of wf wjfj Japandfsdf wefwe fsdf dfwufwe wiufe iwbi</h3>
+              </div>
+  
+              <!-- Navigate to read -->
+              <a href="#" class="transfrom -translate-x-4 w-fit h-fit overflow-hidden bg-black rounded-full p-[5px] flex justify-center items-center mt-3 ">
+                <img src="./assets/svg/arrow.svg" alt="Read More" class="h-[30px] w-[30px]">
+                <span class="text-white text-base pr-2 font-primary">Read More</span>
+              </a>
+            </div>
+            
+          </li>
+
+        </ul>
+
+
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="h-[100px] mt-60 w-[90%] mx-auto text-center">
+    <!-- Copyright Reserved -->
+    <p class="font-secondary text-heading text-1xs">&copy; 2025 Stanford Tse. All Rights Reserved.</p>
+
+    <!-- Policy & Term -->
+    <a href="#" class="font-primary text-sm hover:underline">Policy & Terms</a>
+  </footer>
+  
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
