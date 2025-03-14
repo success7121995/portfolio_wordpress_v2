@@ -1,8 +1,10 @@
 <?php
 /**
- * Backfround Container
+ * Main Foot
  * 
  * @package Personal Website
  * 
  */
 ?>
+  </div>
+</main>
